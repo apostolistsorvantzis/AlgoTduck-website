@@ -1,0 +1,15 @@
+void swap(int *x,int *y){
+    int z= *x;
+    *x =*y;*y = z;
+}
+
+void selection_sort(int A[]){
+    int n = (sizeof(A)/sizeof(*A)); // n = Lenght
+    int min;
+    for (int i =0;i<n-1;i++){
+        min=i;
+        for (int j=i+1;j<n;j++) 
+            if (A[j] < A[min]) min = j;
+        swap(&A[min],&A[i]);
+    }
+}

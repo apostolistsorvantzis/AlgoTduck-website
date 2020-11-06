@@ -1,0 +1,18 @@
+void merge (int A[],int first,int mid,int last){
+    int x = first,y = mid+1,z=0;
+    int a[last-first+1];
+    while (x<=mid AND y<= last){
+        if (A[x] < A[y]) a[z++] = A[x++];
+        else a[z++] = A[y++];
+    while (x <= mid) a[z++] = A[x++]; 
+    while (y<=last) a[z++] = A[y++];
+    for (int i=0; i<z;i++) A[first+i] = a[i];
+    }
+}
+void mergesort(int A[],int first,int last){
+    if (first >= last) return;
+    int mid = (first +last)/2;
+    mergesort(A, first, mid);
+    mergesort(A, mid+1, last);
+    merge(A,first, mid, last);
+}

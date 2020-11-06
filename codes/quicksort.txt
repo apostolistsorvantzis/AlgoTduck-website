@@ -1,0 +1,25 @@
+void swap(int *x,int *y){
+    int z= *x;
+    *x =*y;*y = z;
+}
+
+int partition (int A[],int first int last){
+    int pivot = A[(last + first)/2]; // i choose as pivot the mid
+    int x = first, y = last;
+    while (true) {
+        while (a[x] < pivot) x++;
+        while (pivot < a[y]) y--;
+        if(x>=y) break;
+        swap(&A[x],&A[y]);
+        x++;
+        y--; 
+    } 
+    return y;
+}
+
+void quicksort(int A[],int first,int last){
+    if (first >= last) return;
+    int x = partition(A, first, last);
+    quicksort(a,first,x);
+    quicksort(a,x+1,last);
+}
