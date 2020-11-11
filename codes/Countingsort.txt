@@ -1,4 +1,4 @@
-void countSort(int A[]){
+void CountingSort(int A[]){
     int n = (sizeof(A)/sizeof(*A));
     int a[n];
     int count [10];
