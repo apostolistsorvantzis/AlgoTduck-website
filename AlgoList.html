@@ -19,25 +19,25 @@
         </header>
         <br>
         <br>
-        <section>
+        <section class ="sorting-section">
             <h2>Sorting Algorithms</h2>
             <p>
                 <strong>Selection Sort</strong>
                 <br>
                 Find the minimum and put it first. Complexity O(n^2).
             </p>
-            <img src="Images/selection sort.PNG">
+            <img class="code" src="Images/selection sort.PNG">
             <br>
-                Here is a text with the code that you can use : <a href="codes/selectionsort.txt" download="selection_sort">Download Selection Sort</a>
+                Download Here : <a href="codes/selectionsort.txt" download="selection_sort">Download Selection Sort</a>
             <br>
             <p>
                 <strong>Bubble Sort</strong>
                 <br>
                 Swap with nearby if they are in wrong order. Stop when there is no swap left. Complexity O(n^2).
             </p>
-            <img src="Images/bubblesort.PNG">
+            <img class="code" src="Images/bubblesort.PNG">
             <br>
-                Here is a text with the code that you can use : <a href="codes/bubblesort.txt" download="bubble_sort">Download Bubble Sort</a>
+                Download Here  : <a href="codes/bubblesort.txt" download="bubble_sort">Download Bubble Sort</a>
             <br>
             <p>
                 <strong>Merge Sort</strong>
@@ -47,9 +47,9 @@
                 Devide the array in 2 parts recursively, sort them apart and merge them! Complexity O(nlogn). 
             </p>
             <br>
-            <img src="Images/Mergesort.PNG">
+            <img class="code" src="Images/Mergesort.PNG">
             <br>
-                Here is a text with the code that you can use : <a href="codes/mergesort.txt" download="mergesort">Download MergeSort</a>
+                Download Here  : <a href="codes/mergesort.txt" download="mergesort">Download MergeSort</a>
             <br>
             <p>
                 <strong>Quick Sort</strong>
@@ -59,34 +59,46 @@
                 Pick an element as <strong>pivot</strong> and partition the set around the pivot!Complxity O(nlogn).
             </p>
             <br>
-            <img src="Images/quicksort.PNG">
+            <img class="code" src="Images/quicksort.PNG">
             <br>
-                Here is a text with the code that you can use : <a href="codes/quicksort.txt" download="quicksort">Download QuickSort</a>
+               Download Here : <a href="codes/quicksort.txt" download="quicksort">Download QuickSort</a>
             <p>
-                <strong>Counting Sort</strong>
-                <br>
-                It 's like the algorithm we use to shuffle the deck. The comlexity O(n+k). (n = array size, k = number of the biggest number digits)
-                <br>
-                This sorting algorithm you can use it if the array elements are between (0...9),(k=10). We do this because we want to use it for the radix sort.
-                <br>
+                <strong>Counting Sort</strong><br>
+                It 's like the algorithm we use to shuffle the deck. The comlexity O(n+k)(n = array size, k = number of the biggest number digits).<br>
+                This sorting algorithm you can use it if the array elements are between (0...9),(k=10). We do this because we want to use it for the radix sort.<br>
             </p>
-            <img src="Images/countsort.PNG">
-            <br>
+            <img class="code" src="Images/countsort.PNG"><br>
             Here is a text with the code that you can use : <a href="codes/Countingsort.txt" download="countsort">Download CountingSort</a>
             <p>
-                <strong>Radix Sort</strong>
-                <br>
-                Repeate counting sort for each digit, while preserving the ordering of the prior step, until all digits have been considered. Complexity O(k*n).(n = array size, k = number of the biggest number digits)
-            </p>
-            <br>
-            <img src="Images/radixsort.PNG">
-            <br>
-            Here is a text with the code that you can use : <a href="codes/radixsort.txt" download="radixsort">Download RadixSort</a>
-            <h2><strong>CryptAlgo</strong></h2>
-            <p>
-                <strong>Miller-Rabin Algorithm</strong>
-                <p>
-                    Is a primality test algorithm 
-                </p>
-            </p>
+                <strong>Radix Sort</strong><br>
+                Repeate counting sort for each digit, while preserving the ordering of the prior step, until all digits have been considered.<br> Complexity O(k*n).(n = array size, k = number of the biggest number digits)
+            </p><br>
+            <img class="code" src="Images/radixsort.PNG"><br>
+                Download Here  : <a href="codes/radixsort.txt" download="radixsort">Download RadixSort</a>
         </section>
+        <section class="crypt-section">
+            <h2><strong>CryptAlgo</strong></h2>
+            <div>
+                <h3>Primality Test Algorithms</h3>
+                <p>
+                    <strong>Fast Power and Fast Mod Power</strong> <br> 
+                    Theese 2 algorithmsComplexity O(longn).<br>
+                </p>
+                <img class="code" src="Images/fastmodpower.PNG"><br>
+                Download here: <a href="codes/fastmodpower.txt" download="fastmodpower">Fast Mod Power</a>
+                <p>
+                    <strong>Fermat Primality Test Algorithm</strong><br>
+                    Fermat 's primality test algorithm says that propably one number is prime (bigger k bigger probability).<br>
+                </p>
+                <img class="code" src="Images/fermat.PNG"> <br>
+                Download here: <a href="codes/FermatPrimal.txt" download="fermat">Fermat Test</a>
+                <p>
+                <strong>Miller-Rabin Algorithm</strong><br>
+                    Is a primality test algorithm like Fermat 's but Miller-Rabin Algorithm can also find that Charmichael numbers are composite numbers.<br>
+                </p>
+                <img class="code" src = "Images/millerrabin.PNG"><br>
+                Download here: <a href="codes/millerrabin.txt" download="miller-rabin">Miller-Rabin</a>
+            </div> 
+        </section>
+        </body>
+        </html>

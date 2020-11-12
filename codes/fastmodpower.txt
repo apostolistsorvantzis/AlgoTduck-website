@@ -1,0 +1,17 @@
+def fastmodpower(a,n,p):
+    res=1
+    while(n>0):
+        if(n%2==1):
+            res=res*a % p
+        n=n//2
+        a=a*a % p
+    return res
+    
+def fastpower(a,n):
+    res=1
+    while(n>0):
+        if(n%2==1):
+            res=res*a
+        n=n//2
+        a=a*a
+    return res

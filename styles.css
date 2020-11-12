@@ -72,3 +72,17 @@ html, body {
     color: white;
     padding: .25em 0;
 }
+.sorting-section{
+    text-align: center;
+}
+.crypt-section{
+    text-align: center;
+}
+
+.code{
+    float: center;
+    margin: 0;
+    height: 500px;
+    width: 500px;
+
+}
